@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     if($count == 1) {
         header("Location: welcome.php", false);
     }else {
-        $error = "Your Login Name or Password is invalid";
+        $error = "Salah masukan Pak";
         echo $error;
     }
 
@@ -44,6 +44,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
 <form action="" method="post">
+Selamat Datang Para Jomblo
 Username: <input type="text" name="name"><br>
 Password: <input type="text" name="pass"><br>
 <input type="submit" name="login" value="login">
